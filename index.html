@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Say - Global Tranlsator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    .say-gradient {
+      background: linear-gradient(90deg, #4A90E2, #8E44AD);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="assets/logo_new.png" alt="Say Logo" class="h-20">
+        <span class="ml-3 text-xl font-bold text-gray-800">Say</span>
+      </div>
+      <div>
+        <a href="#features" class="text-gray-600 hover:text-gray-800 mx-3">Features</a>
+        <a href="#plans" class="text-gray-600 hover:text-gray-800 mx-3">Plans</a>
+        <a href="privacy.html" class="text-gray-600 hover:text-gray-800 mx-3">Privacy</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-40 pb-16 bg-gradient-to-r from-blue-100 to-purple-100 text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-5xl font-bold text-gray-800 mb-4 fade-in">
+        Translate, Connect, Sync with <span class="say-gradient">Say</span>
+      </h1>
+      <p class="text-lg text-gray-600 mb-8 fade-in">
+        Break language barriers with real-time translation and secure cloud sync. Start speaking globally today!
+      </p>
+      <div class="flex justify-center space-x-4 fade-in">
+        <a href="https://www.apple.com/app-store/" target="_blank" class="inline-block bg-black text-white font-semibold py-3 px-6 rounded-full hover:bg-gray-800 transition-all">
+          Download on App Store
+        </a>
+        <a href="https://play.google.com/store" target="_blank" class="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-blue-700 transition-all">
+          Get on Play Store
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 text-center mb-12 fade-in">Why Choose Say?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md fade-in">
+          <div class="text-blue-500 mb-4">
+            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h18M3 12h18M3 19h18"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Real-Time Translation</h3>
+          <p class="text-gray-600 text-center">Instantly translate conversations in over 100 languages with high accuracy.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md fade-in">
+          <div class="text-purple-500 mb-4">
+            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15h18M9 9h6m-6 6h6m-9-9v12"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Secure Cloud Sync</h3>
+          <p class="text-gray-600 text-center">Safely sync your chats across devices with SuperGrok subscriptions.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md fade-in">
+          <div class="text-green-500 mb-4">
+            <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2 text-center">Offline Mode</h3>
+          <p class="text-gray-600 text-center">Access translations offline with downloaded language packs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review Section -->
+  <section id="reviews" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 text-center mb-12 fade-in">What Users Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md fade-in">
+          <p class="text-gray-600 italic mb-4">"Say has transformed how I connect with my international friends. The translations are spot on!"</p>
+          <p class="text-gray-800 font-semibold">- Maria S.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md fade-in">
+          <p class="text-gray-600 italic mb-4">"Perfect for travel! The offline mode saved me during my trip to Japan."</p>
+          <p class="text-gray-800 font-semibold">- John D.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans Section -->
+  <section id="plans" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 text-center mb-12 fade-in">Choose Your Plan</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center fade-in">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Weekly</h3>
+          <p class="text-3xl font-bold text-gray-800 mb-4">$1.99</p>
+          <ul class="text-gray-600 mb-6">
+            <li class="mb-2">Real-time translation</li>
+            <li class="mb-2">Basic cloud sync</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center fade-in">
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Monthly</h3>
+          <p class="text-3xl font-bold text-gray-800 mb-4">$4.99</p>
+          <ul class="text-gray-600 mb-6">
+            <li class="mb-2">Real-time translation</li>
+            <li class="mb-2">Enhanced cloud sync</li>
+            <li class="mb-2">Priority support</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center relative fade-in">
+          <div class="absolute top-0 right-0 bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg rounded-tr-lg">
+            Best Value
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-2">Yearly</h3>
+          <p class="text-3xl font-bold text-gray-800 mb-4">$49.99</p>
+          <ul class="text-gray-600 mb-6">
+            <li class="mb-2">Real-time translation</li>
+            <li class="mb-2">Unlimited cloud sync</li>
+            <li class="mb-2">Priority support</li>
+            <li class="mb-2">Save 17%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Snippet -->
+  <section id="privacy" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 text-center mb-12 fade-in">Our Privacy Commitment</h2>
+      <p class="text-gray-600 text-center mb-4 fade-in">
+        At Say, we prioritize your privacy. We collect minimal data to provide our services, such as account details for sign-in and chat history for cloud sync. Learn more in our full <a href="privacy.html" class="text-blue-500 hover:underline">Privacy Policy</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="mb-4">© 2025 Say. All rights reserved.</p>
+      <div class="flex justify-center space-x-4">
+        <a href="#" class="text-gray-400 hover:text-white">Twitter</a>
+        <a href="#" class="text-gray-400 hover:text-white">Instagram</a>
+        <a href="#" class="text-gray-400 hover:text-white">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Fade-in animation on scroll
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(element => observer.observe(element));
+  </script>
+</body>
+</html>
